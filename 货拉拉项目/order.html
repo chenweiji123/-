@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>货拉拉-货拉拉在线下单</title>
+		<link rel="stylesheet" type="text/css" href="css/order.css" />
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/order.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部的开始-->
+		<header class="clearfix">
+			<div class="logon left">
+				<a href="index.html">
+					<img src="images/ic_menu_logo.png" />
+				</a>
+			</div>
+			<div class="nav left">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li class="cl">
+						<a href="#">在线下单</a>
+					</li>
+					<li>
+						<a href="">收费</a>
+					</li>
+					<li>
+						<a href="driverjoin .html">司机加入</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+				</ul>
+			</div>
+			<div class="deng right">
+				<div class="difang left">
+					深圳
+					<i></i>
+				</div>
+				<div class="denglu left">
+					已登录
+				</div>
+			</div>
+		</header>
+		<!--头部的结束-->
+		<section class="main clearfix">
+			<!--左侧部分的开始-->
+			<section class="mainLeft left">
+				<div class="muce">
+					<div class="muceT">
+						<div class="picOne">
+							<img src="images/btn_menu_order_on.png" />
+						</div>
+						<p>叫车</p>
+					</div>
+					<div class="muceM">
+						<div class="picTwo">
+							<img src="images/btn_menu_list_off.png" />
+						</div>
+						<p>我的点单</p>
+					</div>
+					<div class="muceB">
+						<div class="picThree">
+							<img src="images/btn_menu_driver_off.png" />
+						</div>
+						<p>我的司机</p>
+					</div>
+				</div>
+				<div class="footer">
+					<p>
+						<a href="#">隐私政策</a>
+					</p>
+					<p>
+						<a href="#">条款及条件</a>
+					</p>
+					<p>
+						<a href="#">&copy;货拉拉2015</a>
+					</p>
+					<p>
+						<a href="#">版权所有</a>
+					</p>
+					<p>
+						<a href="#">粤ICP备14091972号</a>
+					</p>
+				</div>
+			</section>
+			<!--左侧部分的结束-->
+			<!--中间部分的开始-->
+			<section class="mainM left">
+				<span></span>
+				<div class="car">
+					<i id="ileft"></i>
+					<ul>
+						<li class="xuan">
+							<a href="#">
+								<img src="images/flat_bed_trailer_big_6_8_kuacheng_v1.png" />
+								<p>小面包车</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/flat_bed_trailer_big_7_6_kuacheng_v1.png" />
+								<p>中面包车</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/flat_bed_trailer_big_9_6_kuacheng_v1.png" />
+								<p>小型厢货</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/flat_bed_trailer_small_v2.png" />
+								<p>小型平板</p>
+							</a>
+						</li>
+					</ul>
+					<em id="emRigth"></em>
+				</div>
+				<div class="luxian">
+					<div class="luHead clearfix">
+						<span class="wenz left" style="cursor: pointer;">输入起点、目的地</span>
+						<span class="bnt right" style="cursor: pointer;">使用常用路线下单</span>
+						<div class="sheng">
+							<ul>
+								<li>
+									广州市
+								</li>
+								<li>
+									深圳市
+								</li>
+								<li>
+									东莞市
+								</li>
+							</ul>
+						</div>
+						<div class="qu">
+							<ul>
+								<li>
+									白云区
+								</li>
+								<li>
+									从化区
+								</li>
+								<li>
+									海珠区
+								</li>
+								<li>
+									花都区
+								</li>
+								<li>
+									黄埔区
+								</li>
+								<li>
+									南沙区
+								</li>
+							</ul>
+						</div>
+						<div class="qu">
+							<ul>
+								<li>
+									宝安区
+								</li>
+								<li>
+									福田区
+								</li>
+								<li>
+									南山区
+								</li>
+								<li>
+									罗湖区
+								</li>
+								<li>
+									龙岗区
+								</li>
+								<li>
+									光明区
+								</li>
+							</ul>
+						</div>
+						<div class="qu">
+							<ul>
+								<li>
+									茶山镇
+								</li>
+								<li>
+									长安镇
+								</li>
+								<li>
+									常平镇
+								</li>
+								<li>
+									大朗镇
+								</li>
+								<li>
+									东坑镇
+								</li>
+								<li>
+									凤岗镇
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="star">
+						<ul>
+							<li class="green">
+								<i></i>
+								<input id="starp" type="text" placeholder="按此输入起点" />
+							</li>
+							<li class="red">
+								<i></i>
+								<input id="endp" type="text" placeholder="按此输入目的地" />
+							</li>
+						</ul>
+						<span></span>
+					</div>
+					<div class="set">
+						<span class="spFour">添加目的地</span>
+					</div>
+				</div>
+				<div class="xuqiu">
+					<p>额外需求（选填）</p>
+					<div class="xuOne">
+						<i></i> 优先发送订单给我的司机
+						<img src="images/anniu.png" />
+					</div>
+					<div class="xuTwo" style="cursor: pointer;">
+						<i></i>
+						<span>添加额外需求</span>
+					</div>
+					<div class="xuThree">
+						<i></i>
+						<textarea placeholder="可填写注意事项，例如行驶路线、时间等"></textarea>
+					</div>
+				</div>
+			</section>
+			<!--中间部分的结束-->
+			<!--右侧部分的开始-->
+			<section class="mainR left">
+				<div class="ziliao">
+					<p>联系人资料（必填）</p>
+					<div class="xinxi">
+						<input id="uname" type="text" placeholder="联系人称呼" style="border-bottom: 1px solid #ccc;" /><br />
+						<input id="phone" type="text" placeholder="联系人电话" />
+					</div>
+					<div class="xueq">
+						<textarea placeholder="可填写需求"></textarea>
+					</div>
+				</div>
+				<div class="jiage">
+					<div class="mingxi clearfix">
+						<span class="span1 left"><a href="#">价格明细</a></span>
+						<span class="span2 right">￥ 1000</span>
+					</div>
+					<div class="bnt1">
+						<p class="shouming">高速、停车费用与司机协商</p>
+						<span class="bnt1L left">
+							现在用车
+						</span>
+						<span class="bnt1R left">
+							预定
+						</span>
+					</div>
+				</div>
+			</section>
+			<!--右侧部分的结束-->
+
+		</section>
+		<!--插件-->
+		<div id="meideng">
+			<div class="kuang">
+				<span class="zi"></span>
+				<a id="tiao">确定</a>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+
+</html>

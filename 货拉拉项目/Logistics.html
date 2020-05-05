@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/logistics.css" />
+		<link rel="shortcut icon" href="./favicon.ico">
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+	</head>
+
+	<body>
+
+		<div id="box">
+			<!--头部开始-->
+			<div class="b-nav">
+				<div class="header-container">
+					<div class="top-menu">
+						<a class="logo">
+							<img src="images/logistics.png" class="logo-img" />
+						</a>
+						<ul class="menu-list">
+							<li class="">
+								<a class="menu-link">产品介绍</a>
+							</li>
+							<li class="current">
+								<a data-v-5f5d07a1="" class="menu-link">在线下单</a>
+							</li>
+							<li class="">
+								<a class="menu-link">货物追踪</a>
+							</li>
+							<li class="">
+								<a class="menu-link">运价查询</a>
+							</li>
+							<li class="">
+								<a class="menu-link">违禁品查询</a>
+							</li>
+							<li class="">
+								<a class="menu-link">我的订单</a>
+							</li>
+							<li class="">
+								<a class="menu-link">帮助中心</a>
+							</li>
+						</ul>
+						<div class="userInfo-container">
+							<div class="login-btn">
+								<a class="userInfo-btn">登录</a> <span class="line">&nbsp;|&nbsp;</span>
+								<a class="logout-btn">注册</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--头部结束-->
+
+			<!--内容区开始-->
+			<div class="b-content">
+				<div class="slider-container">
+					<img src="images/bg.png" alt="" class="banner-img">
+				</div>
+				<div class="mian">
+					<div class="notice">
+						<div class="item">
+							<img src="images/i-con8.png" alt="" class="notice-icon">
+							<div class="notice-inner">
+								<div class="notice-text">
+									新客5折，最高立减80元，上门收发货
+								</div>
+							</div>
+							<!--<img src="images/icon-9.png" alt="" class="close-icon">-->
+						</div>
+					</div>
+					<div class="order-online">
+						<form class="el-form">
+							<div class="section">
+								<div class="section-title st1">
+									<img src="images/book.png" />
+									<h2>收发货地址</h2>
+								</div>
+								<div class="section-inner" style="font-size: 14px;">
+									<div class="s-block">
+										<div class="address-title"><span class="at-tag">发货地址</span> <span class="auto-paste">智能粘贴地址</span></div>
+										<div class="el-form-item is-required"><label for="shpr.name" class="el-form-item__label">发货人姓名</label>
+											<div class="el-form-item__content">
+												<div class="el-input">
+													<!----><input type="text" autocomplete="off" placeholder="请填写寄件人姓名" class="el-input__inner fName">
+													<!---->
+													<!---->
+													<!---->
+													<!---->
+												</div> <i class="address-book dj-a"></i>
+												<div class="el-form-item__error fName-t" style="display: none;">
+													请填写发货人姓名
+												</div>
+												<!---->
+											</div>
+										</div>
+										<div class="el-form-item is-required"><label for="shpr.tel" class="el-form-item__label">联系电话</label>
+											<div class="el-form-item__content">
+												<div class="el-input">
+													<!----><input type="text" autocomplete="off" placeholder="手机号/固话" class="el-input__inner number-a">
+													<!---->
+													<!---->
+													<!---->
+													<!---->
+												</div>
+												<div class="el-form-item__error number-t" style="display: none;">
+													请填写联系电话
+												</div>
+												<!---->
+											</div>
+										</div>
+										<div class="form-item-area">
+											<div class="el-form-item is-required"><label for="shpr.address" class="el-form-item__label">发货地址</label>
+												<div class="el-form-item__content">
+													<div class="city-picker-container" style="width: 440px;">
+														<div class="regions-input el-input el-input--suffix">
+															<!----><input type="text" readonly="readonly" autocomplete="off" placeholder="请选择省/市/区" class="el-input__inner text1">
+															<!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-input__icon el-icon-arrow-down i-1"></i><!----><!----><!----><!----></span>
+															<!---->
+															</span>
+															<!---->
+															<!---->
+														</div>
+														<div class="city-picker-detail xlk-1" style="display: none;">
+															<ul class="city-picker-bar">
+																<li class="current">省份</li>
+																<li class="" style="display: none;">城市</li>
+																<li class="" style="display: none;">区县</li>
+															</ul>
+															<div class="tab-item-list">
+																<ul class="region-list">
+																	<li><span class="gds">广东省</span></li>
+																</ul>
+																<!---->
+																<!---->
+															</div>
+														</div>
+													</div>
+													<div data-v-4d381ef0="" class="poi-search-container">
+														<div data-v-4d381ef0="" class="el-input el-input--suffix">
+															<!----><input type="text" placeholder="详细街道及门牌号" class="el-input__inner text2">
+															<!---->
+															<!---->
+															<!---->
+															<!---->
+														</div>
+														<!---->
+													</div>
+													<!---->
+												</div>
+											</div>
+											<div class="auto-save"><i class="icon-circle icon-circle-a"></i> 保存到地址簿
+											</div>
+										</div>
+									</div>
+									<div class="s-block">
+										<div class="address-title"><span class="at-tag at-tag1">收货地址</span> <span class="auto-paste">智能粘贴地址</span></div>
+										<div class="el-form-item is-required"><label for="cnee.name" class="el-form-item__label">收货人姓名</label>
+											<div class="el-form-item__content">
+												<div class="el-input">
+													<!----><input type="text" autocomplete="off" placeholder="请填写收件人姓名" class="el-input__inner sName">
+													<!---->
+													<!---->
+													<!---->
+													<!---->
+												</div> <i class="address-book dj-b"></i>
+												<!---->
+												<div class="el-form-item__error sName-t" style="display: none;">
+													请填写收货人姓名
+												</div>
+											</div>
+										</div>
+										<div class="el-form-item is-required"><label for="cnee.tel" class="el-form-item__label">联系电话</label>
+											<div class="el-form-item__content">
+												<div class="el-input">
+													<!----><input type="text" autocomplete="off" placeholder="手机号/固话" class="el-input__inner number-b">
+													<!---->
+													<!---->
+													<!---->
+													<!---->
+												</div>
+												<div class="el-form-item__error number-tt" style="display: none;">请填写联系电话</div>
+												<!---->
+											</div>
+										</div>
+										<div class="form-item-area">
+											<div class="el-form-item is-required"><label for="cnee.address" class="el-form-item__label">收货地址</label>
+												<div class="el-form-item__content">
+													<div class="city-picker-container" style="width: 440px;">
+														<div class="regions-input el-input el-input--suffix">
+															<!----><input type="text" placeholder="请选择省/市/区" class="el-input__inner neirong">
+															<!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-input__icon el-icon-arrow-down i-3"></i><!----><!----><!----><!----></span>
+															<!---->
+															</span>
+															<!---->
+															<!---->
+														</div>
+														<div class="city-picker-detail xlk-2" style="display: none;">
+															<ul class="city-picker-bar">
+																<li class="current">省份</li>
+																<li class="" style="display: none;">城市</li>
+																<li class="" style="display: none;">区县</li>
+															</ul>
+															<div class="tab-item-list">
+																<ul class="region-list">
+																	<li><span class="">北京</span></li>
+																	<li><span class="">天津</span></li>
+																	<li><span class="">河北省</span></li>
+																	<li><span class="">山西省</span></li>
+																	<li><span class="">内蒙古自治区</span></li>
+																	<li><span class="">辽宁省</span></li>
+																	<li><span class="">吉林省</span></li>
+																	<li><span class="">黑龙江省</span></li>
+																	<li><span class="">上海</span></li>
+																	<li><span class="">江苏省</span></li>
+																	<li><span class="">浙江省</span></li>
+																	<li><span class="">安徽省</span></li>
+																	<li><span class="">福建省</span></li>
+																	<li><span class="">江西省</span></li>
+																	<li><span class="">山东省</span></li>
+																	<li><span class="">河南省</span></li>
+																	<li><span class="">湖北省</span></li>
+																	<li><span class="">湖南省</span></li>
+																	<li><span class="">广东省</span></li>
+																	<li><span class="">广西壮族自治区</span></li>
+																	<li><span class="">海南省</span></li>
+																	<li><span class="">重庆</span></li>
+																	<li><span class="">四川省</span></li>
+																	<li><span class="">贵州省</span></li>
+																	<li><span class="">云南省</span></li>
+																	<li><span class="">西藏自治区</span></li>
+																	<li><span class="">陕西省</span></li>
+																	<li><span class="">甘肃省</span></li>
+																	<li><span class="">青海省</span></li>
+																	<li><span class="">宁夏回族自治区</span></li>
+																	<li><span class="">新疆维吾尔自治区</span></li>
+																</ul>
+																<!---->
+																<!---->
+															</div>
+														</div>
+													</div>
+													<div data-v-4d381ef0="" class="poi-search-container">
+														<div data-v-4d381ef0="" class="el-input el-input--suffix">
+															<!----><input type="text" placeholder="详细街道及门牌号" class="el-input__inner text5">
+															<!---->
+															<!---->
+															<!---->
+															<!---->
+														</div>
+														<!---->
+													</div>
+													<div class="address-mask"></div>
+													<div class="common-toast common-toast-hide" style="display: none;">请先填写发货地址</div>
+													<!---->
+												</div>
+											</div>
+											<div class="auto-save"><i class="icon-circle icon-circle-b"></i> 保存到地址簿
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						<form class="el-form">
+							<div class="section">
+								<div class="section-title st2"><img src="images/icon-2.png" alt="">
+									<h2>货物信息</h2></div>
+								<div class="section-inner">
+									<div class="s-block s-block1">
+										<div class="el-form-item is-required"><label for="type" class="el-form-item__label">货物类型</label>
+											<div class="el-form-item__content">
+												<div data-v-61070966="" class="type-select"><span data-v-61070966=""><div role="tooltip" id="el-popover-7380" aria-hidden="true" class="el-popover el-popper xlk-3" tabindex="0" style="width: 440px; display: none;"><!----><ul data-v-61070966="" class="type-list clearfix "><li data-v-61070966="" class="cus-btn">设备</li><li data-v-61070966="" class="cus-btn">材料</li><li data-v-61070966="" class="cus-btn">电子产品</li><li data-v-61070966="" class="cus-btn">家具家电</li><li data-v-61070966="" class="cus-btn">服装鞋帽</li><li data-v-61070966="" class="cus-btn">居家用品</li><li data-v-61070966="" class="cus-btn">其他</li></ul> </div><div data-v-61070966="" class="inner el-popover__reference" aria-describedby="el-popover-7380" tabindex="0"><div data-v-61070966="" class="placeholder">请选择货物类型</div> <div data-v-61070966="" class="arrow"><i data-v-61070966="" class="el-icon-arrow-down el-input__icon i-2"></i></div></div></span></div>
+												<!---->
+											</div>
+										</div>
+										<div class="el-form-item is-required"><label for="weight" class="el-form-item__label">重量（kg）</label>
+											<div class="el-form-item__content">
+												<div class="step-input">
+													<div class="el-input">
+														<!----><input type="number" autocomplete="off" placeholder="kg" class="el-input__inner">
+														<!---->
+														<!---->
+														<!---->
+														<!---->
+													</div> <span class="el-icon-minus"></span> <span class="el-icon-plus"></span></div>
+												<!---->
+											</div>
+										</div>
+									</div>
+									<div class="s-block s-block1">
+										<div class="el-form-item is-required"><label for="volume" class="el-form-item__label">体积（m³）</label>
+											<div class="el-form-item__content">
+												<div class="step-input">
+													<div class="el-input">
+														<!----><input type="number" autocomplete="off" placeholder="m³" class="el-input__inner">
+														<!---->
+														<!---->
+														<!---->
+														<!---->
+													</div> <span class="el-icon-minus"></span> <span class="el-icon-plus"></span></div> <span><div role="tooltip" id="el-popover-4139" aria-hidden="true" class="el-popover el-popper" tabindex="0" style="width: 118px; display: none;"><!----><div class="volume-profile"><div class="item"><input oninput="if(value.length>5)value=value.slice(0,5)" type="number" placeholder="长"> <span>cm</span></div>
+											<div class="item"><input oninput="if(value.length>5)value=value.slice(0,5)" type="number" placeholder="宽"> <span>cm</span></div>
+											<div class="item"><input oninput="if(value.length>5)value=value.slice(0,5)" type="number" placeholder="高"> <span>cm</span></div> <button class="cus-btn cus-btn-primary disabled">确定</button></div>
+									</div><i class="icon-calctor el-popover__reference" aria-describedby="el-popover-4139" tabindex="0"></i></span>
+									<!---->
+								</div>
+							</div>
+							<div class="el-form-item"><label for="quantity" class="el-form-item__label">数量（件）</label>
+								<div class="el-form-item__content">
+									<div class="step-input">
+										<div class="el-input">
+											<!----><input type="number" autocomplete="off" placeholder="件" class="el-input__inner">
+											<!---->
+											<!---->
+											<!---->
+											<!---->
+										</div> <span class="el-icon-minus"></span> <span class="el-icon-plus"></span></div>
+									<!---->
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="section-title st2">
+					<img src="images/icon-5.png" />
+					<h2>更多服务</h2>
+				</div>
+				<div class="section-inner" style="font-size: 14px;color: #666;">
+					<div class="s-block">
+						<div class="el-form-item"><label for="doorstep" class="el-form-item__label">收货方式</label>
+							<div class="el-form-item__content">
+								<div class="el-select">
+									<!---->
+									<div class="el-input el-input--suffix">
+										<!----><input type="text" readonly="readonly" autocomplete="off" placeholder="送货上门" class="el-input__inner val-a">
+										<!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-select__caret el-input__icon el-icon-arrow-up i-4"></i><!----><!----><!----><!----><!----></span>
+										<!---->
+										</span>
+										<!---->
+										<!---->
+									</div>
+									<div class="el-select-dropdown el-popper xlk-4" style="display: none; min-width: 442.5px;transform-origin: center top">
+										<div class="el-scrollbar" style="">
+											<div class="el-select-dropdown__wrap el-scrollbar__wrap" style="margin-bottom: -4px;">
+												<ul class="el-scrollbar__view el-select-dropdown__list">
+													<!---->
+													<li class="el-select-dropdown__item selected text-a"><span class="li-sp">送货上门</span></li>
+													<li class="el-select-dropdown__item text-a"><span class="li-sp">自提</span></li>
+												</ul>
+											</div>
+											<div class="el-scrollbar__bar is-horizontal">
+												<div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+											</div>
+											<div class="el-scrollbar__bar is-vertical">
+												<div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+											</div>
+										</div>
+										<!---->
+										<div x-arrow="" class="popper__arrow" style="left: 35px;"></div>
+									</div>
+								</div>
+								<!---->
+							</div>
+						</div>
+						<div class="el-form-item"><label for="payment" class="el-form-item__label">付款方式
+                    <i class="el-tooltip icon-question xs-c" aria-describedby="el-tooltip-9608" tabindex="0"></i></label>
+							<div class="el-form-item__content">
+								<div class="el-select">
+									<!---->
+									<div class="el-input el-input--suffix">
+										<!----><input type="text" readonly="readonly" autocomplete="off" placeholder="寄付" class="el-input__inner val-b">
+										<!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-select__caret el-input__icon el-icon-arrow-up i-5"></i><!----><!----><!----><!----><!----></span>
+										<!---->
+										</span>
+										<!---->
+										<!---->
+									</div>
+									<div class="el-select-dropdown el-popper xlk-5" style="display: none; min-width: 442.5px;">
+										<div class="el-scrollbar" style="">
+											<div class="el-select-dropdown__wrap el-scrollbar__wrap" style="margin-bottom: -4px;">
+												<ul class="el-scrollbar__view el-select-dropdown__list">
+													<!---->
+													<li class="el-select-dropdown__item selected text-b"><span>寄付</span></li>
+													<li class="el-select-dropdown__item text-b"><span>到付</span></li>
+												</ul>
+											</div>
+											<div class="el-scrollbar__bar is-horizontal">
+												<div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+											</div>
+											<div class="el-scrollbar__bar is-vertical">
+												<div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+											</div>
+										</div>
+
+										<!---->
+										<div x-arrow="" class="popper__arrow" style="left: 35px;"></div>
+									</div>
+								</div>
+								<!---->
+							</div>
+							<div role="tooltip" id="el-tooltip-8517" aria-hidden="true" class="el-tooltip__popper is-dark xs-a" style="transform-origin: center top; z-index: 2058; margin: 0; display: none;">
+								<div data-v-0aefa852="">
+									<div data-v-0aefa852="" class="tip-wrapper" style="margin: 0;">
+										<div data-v-0aefa852="" class="insure-info">
+											<p data-v-0aefa852="">1. 请如实声明并填写保价金额，声明价值不得超过实际价值。最高声明价值不超过300,000.00元。</p>
+											<p data-v-0aefa852="">2. 如您未选择保价，我们仅在三倍运费或1,000.00元（较低者为准）的限额内向您赔偿托付寄物的实际损失。 </p>
+											<p data-v-0aefa852="">3. 详细内容请阅读<span data-v-0aefa852="" class="m-c">《零担运单契约条款》</span>，下单即表示您理解并同意条款内容。</p>
+										</div>
+										<div data-v-0aefa852="" class="rules">
+											<div data-v-0aefa852="" class="rule-title">5万元以上费用说明</div>
+											<div data-v-0aefa852="" class="item">
+												<div data-v-0aefa852="" class="key">声明价值</div>
+												<div data-v-0aefa852="" class="value">费率</div>
+											</div>
+											<div data-v-0aefa852="" class="item">
+												<div data-v-0aefa852="" class="key">5万（含）以内</div>
+												<div data-v-0aefa852="" class="value">0.4%</div>
+											</div>
+											<div data-v-0aefa852="" class="item">
+												<div data-v-0aefa852="" class="key">5万（不含）～15万（含）</div>
+												<div data-v-0aefa852="" class="value">0.3%</div>
+											</div>
+											<div data-v-0aefa852="" class="item">
+												<div data-v-0aefa852="" class="key">15万（不含）～30万（含）</div>
+												<div data-v-0aefa852="" class="value">0.2%</div>
+											</div>
+										</div>
+										<div data-v-0aefa852="" class="explanation">
+											<p data-v-0aefa852="">费率为阶梯制计算，最终费用为各档费用加和</p>
+											<p data-v-0aefa852="">小于5万，保价费=声明价值*0.4%</p>
+											<p data-v-0aefa852="">当5万 ＜ 声明价值 ≦ 15万，保价费=（声明价值-50000）*0.3%+50000*0.4%</p>
+											<p data-v-0aefa852="">当15万 ＜ 声明价值 ≦ 30万，保价费=（声明价值-150000）*0.2%+100000*0.3%+50000*0.4%</p>
+										</div>
+									</div>
+								</div>
+								<div x-arrow="" class="popper__arrow" style="left: 32px;"></div>
+							</div>
+							<div role="tooltip" id="el-tooltip-4357" aria-hidden="true" class="el-tooltip__popper is-dark xs-b" style="transform-origin: center top; z-index: 2003; display: none;">部分偏远地区不支持到付，敬请理解。
+								<div x-arrow="" class="popper__arrow" style="left: 32px;"></div>
+							</div>
+
+						</div>
+						<div class="el-form-item"><label for="insureValue" class="el-form-item__label">货物保价<i data-v-0aefa852="" class="el-tooltip icon-question xs" aria-describedby="el-tooltip-7004" tabindex="0"></i></label>
+							<div class="el-form-item__content">
+								<div class="el-input">
+									<!----><input type="number" autocomplete="off" placeholder="输入货物价值" class="el-input__inner">
+									<!---->
+									<!---->
+									<!---->
+									<!---->
+								</div>
+								<div class="insure-tip">
+									建议您按照货物实际价值进行保价，若在寄递过程中发生丢损，您最高可获得声明价 值（保价金额）赔偿，最高30万元封顶。
+								</div>
+								<!---->
+							</div>
+						</div>
+					</div>
+					<div class="s-block">
+						<div class="el-form-item"><label class="el-form-item__label">预约上门取件</label>
+							<div class="el-form-item__content">
+								<div data-v-2662cf78="" class="type-select"><span data-v-2662cf78=""><div role="tooltip" id="el-popover-4991" aria-hidden="true" class="el-popover el-popper" tabindex="0" style="width: 375px; display: none;"><!----><div data-v-2662cf78="" class="time-wrapper"><div data-v-2662cf78="" class="time-picker-main"><div data-v-2662cf78="" class="time-picker-left"><div data-v-2662cf78="" class="date-item checked"><div data-v-2662cf78="" class="date-name">明天</div> <div data-v-2662cf78="" class="date">12月1日</div></div><div data-v-2662cf78="" class="date-item"><div data-v-2662cf78="" class="date-name">后天</div> <div data-v-2662cf78="" class="date">12月2日</div></div></div> <div data-v-2662cf78="" class="time-picker-right"><div data-v-2662cf78="" class="time-item time-item checked"><div data-v-2662cf78="" class="time-name">
+                09:00
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                09:30
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                10:00
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                10:30
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                11:00
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                11:30
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                12:00
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                12:30
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                13:00
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                13:30
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                14:00
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                14:30
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                15:00
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                15:30
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                16:00
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                16:30
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                17:00
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                17:30
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                18:00
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                18:30
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                19:00
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                19:30
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                20:00
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                20:30
+                <!----></div></div><div data-v-2662cf78="" class="time-item time-item"><div data-v-2662cf78="" class="time-name">
+                21:00
+                <div data-v-2662cf78="" class="time-tips">时间较晚，可能会安排明日取货</div></div></div></div></div> <!----></div> </div><div data-v-2662cf78="" class="inner el-popover__reference" aria-describedby="el-popover-4991" tabindex="0"><div data-v-2662cf78="" class="type-text">
+          明天09:00
+          <!----></div> <div data-v-2662cf78="" class="arrow"><i data-v-2662cf78="" class="el-icon-date"></i></div></div></span></div>
+								<!---->
+							</div>
+						</div>
+						<div class="el-form-item"><label for="wooden_frame" class="el-form-item__label">包装木架</label>
+							<div class="el-form-item__content">
+								<div class="el-select">
+									<!---->
+									<div class="el-input el-input--suffix">
+										<!----><input type="text" readonly="readonly" autocomplete="off" placeholder="请选择" class="el-input__inner val-c">
+										<!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-select__caret el-input__icon el-icon-arrow-up i-6"></i><!----><!----><!----><!----><!----></span>
+										<!---->
+										</span>
+										<!---->
+										<!---->
+									</div>
+									<div class="el-select-dropdown el-popper xlk-6" style="display: none; min-width: 442.5px;">
+										<div class="el-scrollbar" style="">
+											<div class="el-select-dropdown__wrap el-scrollbar__wrap" style="margin-bottom: -4px;">
+												<ul class="el-scrollbar__view el-select-dropdown__list">
+													<!---->
+													<li class="el-select-dropdown__item text-c"><span>不需要</span></li>
+													<li class="el-select-dropdown__item text-c"><span>需要</span></li>
+												</ul>
+											</div>
+											<div class="el-scrollbar__bar is-horizontal">
+												<div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+											</div>
+											<div class="el-scrollbar__bar is-vertical">
+												<div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+											</div>
+										</div>
+										<!---->
+										<div x-arrow="" class="popper__arrow" style="left: 35px;"></div>
+									</div>
+								</div>
+								<div class="form-tip">示例和收费</div>
+								<!---->
+							</div>
+						</div>
+						<div class="el-form-item"><label for="order_receipt" class="el-form-item__label">签收单</label>
+							<div class="el-form-item__content">
+								<div class="el-select">
+									<!---->
+									<div class="el-input el-input--suffix">
+										<!----><input type="text" readonly="readonly" autocomplete="off" placeholder="请选择" class="el-input__inner val-d">
+										<!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-select__caret el-input__icon el-icon-arrow-up i-7"></i><!----><!----><!----><!----><!----></span>
+										<!---->
+										</span>
+										<!---->
+										<!---->
+									</div>
+									<div class="el-select-dropdown el-popper  xlk-7" style="display: none; min-width: 442.5px;">
+										<div class="el-scrollbar" style="">
+											<div class="el-select-dropdown__wrap el-scrollbar__wrap" style="margin-bottom: -4px; ">
+												<ul class="el-scrollbar__view el-select-dropdown__list">
+													<!---->
+													<li class="el-select-dropdown__item text-d"><span>不需要</span></li>
+													<li class="el-select-dropdown__item text-d"><span>需要</span></li>
+												</ul>
+											</div>
+											<div class="el-scrollbar__bar is-horizontal">
+												<div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+											</div>
+											<div class="el-scrollbar__bar is-vertical">
+												<div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+											</div>
+											<div x-arrow="" class="popper__arrow" style="left: 35px;"></div>
+										</div>
+										<!---->
+									</div>
+								</div>
+								<!---->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="remark">
+					<div class="el-form-item"><label for="remark" class="el-form-item__label">订单备注</label>
+						<div class="el-form-item__content">
+							<div class="el-textarea"><textarea autocomplete="off" class="el-textarea__inner" style="min-height: 33px;"></textarea>
+								<!---->
+							</div>
+							<!---->
+						</div>
+					</div>
+				</div>
+
+			</div>
+			</form>
+		</div>
+
+		</div>
+		</div>
+		<div data-v-62ae2ae2="" class="bottom-action bottom-warp">
+			<div data-v-62ae2ae2="" class="inner">
+				<div class="el-tooltip agreement" data-v-62ae2ae2="" aria-describedby="el-tooltip-6018" tabindex="0"><i class="icon-circle icon-circle-c"></i> 我已阅读并同意
+					<a class="m-c">《零担运单契约条款》</a>
+				</div>
+				<div data-v-62ae2ae2="" class="order-info">
+					<div data-v-62ae2ae2="" class="order-price">
+						<div data-v-62ae2ae2="" class="price-content">
+							<!---->
+							<div data-v-62ae2ae2="" class="price">
+								预计
+								<span data-v-62ae2ae2="" class="cur-price">￥--</span>
+								<!---->
+							</div>
+						</div>
+						<div data-v-62ae2ae2="" class="price-explanation">以实际重量体积为准</div>
+					</div>
+					<div data-v-62ae2ae2="" class="order-coupon">
+						<div data-v-62ae2ae2="" class="toggle-btn">优惠券<i data-v-62ae2ae2="" class="el-icon-arrow-up"></i></div>
+						<div data-v-62ae2ae2="" class="coupon-text">登录查看</div>
+					</div> <button data-v-62ae2ae2="" class="confirm-btn disabled xd">立即下单</button></div>
+			</div>
+		</div>
+		<div class="b-settlement">
+			<div class="footer-container ">
+				<div class="bottom-menu-container ">
+					<div class="layout-main bottom-menu-main ">
+						<div class="container-title ">联系我们</div>
+						<ul class="link-area ">
+							<li>
+								<img src="images/icon-6.png " class="link-icon " /> 专人客服：0755-3319-8423
+							</li>
+							<li>
+								<img src="images/icon-7.png " class="link-icon " /> wuliu@huolala.cn
+							</li>
+						</ul>
+						<div class="concern-container "><img src="https://static-express.huolala.cn/images/wuli-web/wechat_qr.png " class="wechat-qr-img ">
+							<p class="concern-desc ">扫描关注“货拉拉物流服务号”<br/>获取更多物流资讯</p>
+						</div>
+					</div>
+				</div>
+				<div class="copyright-container ">
+					<div class="layout-main copyright-main ">
+						<a><img src="images/huolala.png " class="bottom-logo " /></a> 深圳货拉拉科技有限公司
+						<span class="copyright-line ">|</span>粤ICP备14091972号
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="float-menu" data-v-62ae2ae2="">
+			<li style="position: relative;" class="fm-li-1">
+				<div class="el-tooltip float-menu-icon qrcode-icon" aria-describedby="el-tooltip-4217" tabindex="0"></div>
+			</li>
+			<li>
+				<div class="el-tooltip float-menu-icon tel-icon" aria-describedby="el-tooltip-7756" tabindex="0"></div>
+
+			</li>
+			<li class="menu-li" style="opacity: 0;">
+				<div class="float-menu-icon roll-up-icon"></div>
+			</li>
+		</ul>
+		<div class="s-img1">
+			<img src="images/ewm.png" />
+			<div class="m-c">下载货拉拉APP</div>
+			<div>下单更方便</div>
+			<div class="dsj">
+			</div>
+		</div>
+		<div class="s-img2">
+			<div>
+				<p class="label">全国服务热线</p>
+				<p class="value">0755-3319-8423</p>
+			</div>
+			<div>
+				<p class="label">工作时间</p>
+				<p class="value">08:00-21:00</p>
+			</div>
+			<div class="dsj">
+			</div>
+		</div>
+
+		</div>
+		</div>
+		<div data-v-5b7e7db0="" data-v-62ae2ae2="" class="login-container mask login-1">
+			<div data-v-5b7e7db0="" class="login-main ">
+				<a data-v-5b7e7db0="" class="close-btn"></a> <img data-v-5b7e7db0="" src="images/logistics.png" class="login-logo">
+				<div data-v-5b7e7db0="" class="form-container">
+					<form data-v-5b7e7db0="" class="el-form login-form">
+						<div data-v-5b7e7db0="" class="el-form-item"><label for="tel" class="el-form-item__label">手机号</label>
+							<div class="el-form-item__content">
+								<div data-v-5b7e7db0="" class="el-input el-input--suffix">
+									<!----><input type="text" autocomplete="off" placeholder="请输入手机号码" class="el-input__inner phone-a">
+									<!---->
+									<!---->
+									<!---->
+									<!---->
+								</div>
+								<!---->
+								<div class="el-form-item__error phones-a" style="display: none;">
+									请输入手机号码
+								</div>
+
+							</div>
+						</div>
+						<div data-v-5b7e7db0="" class="el-form-item"><label for="code" class="el-form-item__label">验证码</label>
+							<div class="el-form-item__content">
+								<div data-v-5b7e7db0="" class="code-input el-input el-input--suffix">
+									<!----><input type="text" autocomplete="off" placeholder="请输入短信验证码" maxlength="10" class="el-input__inner phone-b">
+									<!---->
+									<!---->
+									<!---->
+									<!---->
+								</div>
+								<div data-v-5b7e7db0="" class="code-btn hignlight-txt phones-t">获取验证码</div>
+								<!---->
+								<div class="el-form-item__error phones-b" style="display: none;">
+									请输入验证码
+								</div>
+							</div>
+						</div>
+						<div data-v-5b7e7db0="" class="agree-container"><span data-v-5b7e7db0=""><span data-v-5b7e7db0="" class="radio ty"></span>我已阅读并同意</span>
+							<a data-v-5b7e7db0="" target="_blank" href="https://uappweb.huolala.cn/user_terms/index.html" class="hignlight-txt">《货拉拉用户平台协议》</a>
+						</div>
+					</form>
+				</div>
+				<div data-v-5b7e7db0="" class="submit-btn dl">登录</div>
+				<!---->
+			</div>
+		</div>
+		<div data-v-5b7e7db0="" data-v-62ae2ae2="" class="login-container mask login-2">
+			<div data-v-5b7e7db0="" class="login-main ">
+				<a data-v-5b7e7db0="" class="close-btn"></a> <img data-v-5b7e7db0="" src="images/logistics.png" class="login-logo">
+				<div data-v-5b7e7db0="" class="form-container">
+					<form data-v-5b7e7db0="" class="el-form login-form">
+						<div data-v-5b7e7db0="" class="el-form-item"><label for="tel" class="el-form-item__label">手机号</label>
+							<div class="el-form-item__content">
+								<div data-v-5b7e7db0="" class="el-input el-input--suffix">
+									<!----><input type="text" autocomplete="off" placeholder="请输入手机号码" class="el-input__inner phone-s">
+									<!---->
+									<!---->
+									<!---->
+									<!---->
+								</div>
+								<!---->
+								<div class="el-form-item__error phones-s" style="display: none;">
+									请输入手机号码
+								</div>
+							</div>
+						</div>
+						<div data-v-5b7e7db0="" class="el-form-item"><label for="code" class="el-form-item__label">验证码</label>
+							<div class="el-form-item__content">
+								<div data-v-5b7e7db0="" class="code-input el-input el-input--suffix">
+									<!----><input type="text" autocomplete="off" placeholder="请输入短信验证码" maxlength="10" class="el-input__inner phone-d">
+									<!---->
+									<!---->
+									<!---->
+									<!---->
+								</div>
+								<div data-v-5b7e7db0="" class="code-btn hignlight-txt phoned-s">获取验证码</div>
+								<!---->
+								<div class="el-form-item__error phoned-y" style="display: none;">
+									请输入验证码
+								</div>
+							</div>
+						</div>
+						<div data-v-5b7e7db0="" class="agree-container"><span data-v-5b7e7db0=""><span data-v-5b7e7db0="" class="radio zc1"></span>我已阅读并同意</span>
+							<a data-v-5b7e7db0="" target="_blank" href="https://uappweb.huolala.cn/user_terms/index.html" class="hignlight-txt">《货拉拉用户平台协议》</a>
+						</div>
+					</form>
+				</div>
+				<div data-v-5b7e7db0="" class="submit-btn zc">注册</div>
+				<div data-v-5b7e7db0="" style="color: rgb(204, 204, 204); font-size: 12px; margin-top: 10px;">已注册用户不会重复注册，手机验证成功完成登录</div>
+			</div>
+		</div>
+		<div data-v-24b4cd47="" class="el-dialog__wrapper xs-d" data-v-62ae2ae2="" style="z-index: 2001;display: none;">
+			<div role="dialog" aria-modal="true" aria-label="木包装示例和收费" class="el-dialog" style="margin-top: 15vh; width: 880px;background: #fff;">
+				<div class="el-dialog__header"><span class="el-dialog__title" style="margin: 0;">木包装示例和收费</span><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close">×</i></button></div>
+				<div class="el-dialog__body">
+					<div data-v-24b4cd47="" class="wrapper">
+						<div data-v-24b4cd47="" class="package-info">
+							<div data-v-24b4cd47="" class="item1">
+								<div data-v-24b4cd47="" class="col1">包装名称</div>
+								<div data-v-24b4cd47="" class="col2"><img data-v-24b4cd47="" src="images/package-1.6f81722.png" alt="">
+									<div data-v-24b4cd47="" class="p-name">木架</div>
+								</div>
+								<div data-v-24b4cd47="" class="col2"><img data-v-24b4cd47="" src="images/package-2.d7682fb.png" alt="">
+									<div data-v-24b4cd47="" class="p-name">木箱</div>
+								</div>
+								<div data-v-24b4cd47="" class="col2"><img data-v-24b4cd47="" src="images/package-3.92118b8.png" alt="">
+									<div data-v-24b4cd47="" class="p-name">标准托盘</div>
+								</div>
+							</div>
+							<div data-v-24b4cd47="" class="item1">
+								<div data-v-24b4cd47="" class="col1">收费标准</div>
+								<div data-v-24b4cd47="" class="col2"><span data-v-24b4cd47="">100元/方，起步50元</span></div>
+								<div data-v-24b4cd47="" class="col2"><span data-v-24b4cd47="">100元/方，起步50元</span></div>
+								<div data-v-24b4cd47="" class="col2"><span data-v-24b4cd47="">50元/个， 加缠膜加20元</span></div>
+							</div>
+							<div data-v-24b4cd47="" class="item1">
+								<div data-v-24b4cd47="" class="col1"><span data-v-24b4cd47="">尺寸</span> <span data-v-24b4cd47="">(cm)</span></div>
+								<div data-v-24b4cd47="" class="col2">
+									<div data-v-24b4cd47="">开单体积</div>
+								</div>
+								<div data-v-24b4cd47="" class="col2">
+									<div data-v-24b4cd47="">开单体积</div>
+								</div>
+								<div data-v-24b4cd47="" class="col2">
+									<div data-v-24b4cd47="">120*100</div>
+								</div>
+							</div>
+							<div data-v-24b4cd47="" class="item1">
+								<div data-v-24b4cd47="" class="col1">说明</div>
+								<div data-v-24b4cd47="" class="col2"><span data-v-24b4cd47="">木架，半封闭</span> <span data-v-24b4cd47="">适用：酒，家具，汽配件等</span></div>
+								<div data-v-24b4cd47="" class="col2"><span data-v-24b4cd47="">木箱，全封闭免熏蒸胶合板</span> <span data-v-24b4cd47="">适用：设备，显示器，精密仪器等</span></div>
+								<div data-v-24b4cd47="" class="col2"><span data-v-24b4cd47="">适用：一票多件，重货</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!---->
+			</div>
+		</div>
+		<div class="el-dialog__wrapper xs-e" style="z-index: 2001; display: none;">
+			<div role="dialog" aria-modal="true" aria-label="选择联系人" class="el-dialog" style="margin-top: 15vh; width: 640px;">
+				<div class="el-dialog__header"><span class="el-dialog__title">选择联系人</span><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div>
+				<div class="el-dialog__body" style="background: #fff;">
+					<div class="address-book-wrapper">
+						<!---->
+						<div class="no-data-wrapper">
+							<div class="no-data"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQQAAAEECAMAAAD51ro4AAAANlBMVEVHcEyMj5+Mj5/l6erl6erl6erl6erg4ebm6urg5OaZnKnr7PCLjp7Bxc7k6On1pn64u8Woq7efzx3zAAAACnRSTlMAdLyu3cSV/mMnJAliwwAAAz9JREFUeNrt3d1uozAQQOEAgUAbp+P3f9k1SaXuakPALsHj8TkXrdSfC74asE3UnE5ERERERERERERERERERERERERERKb6yFDbNlP1CNdQ24Aw14CgiSErghaFvAjXFgQtCrkRVJwR2RE0KORHuIKgYigoQLiCoGEoaEBoQQhNIOQ/H1QgtCCAAIKWmQIIIIBQB8LnxkAAAQQQQAABBBBAAAEEEEAAAQQQDkPwIuJc+OBrRfDh+H+KdTCB8C9BPIMFBO+e5OtCEPc0qQlhwSBUD8KywfaxoAbhulj89SD2ulA4wkuDzQqFI8hrBKkBYWUgbB0KZSPIGoJUgOBWs4/g1xG8eQRZRxDzk6WCEC7/BcKOCM7tc2UEgdMBBBDM3CLNTZaSNlWsTZuTEKwtoJIQrC2l0/YYjW2qpCEY215L3G1mo5Ut91WF7Y+gykco4zHctmlzOkIRD2TfjlDCo/n3IxTwIo0jENS/XOcYBP9AeDCUOhJ+9ZqlX14UzL5cJ+b+UD6CNzRtfsfagaV0LXuMe+20lozgxe3z+KVgBO825g0jyFYEZ3ey5LYnVhHE7adQKoJ3UXmLCJEGKwqFIkgsgthbSkcPhNdDocyNVolHEGsICQPh5VAoEkFSEMQYgkvKFoJPQ/CmECQNQUwhOLfz+VDgKtKnIngQbCFIKoKAAII5BOf2vj2A8MG/EwEBBBBAAAEEEEAAAQQQQAABBBBAAEE9wtZAAAEEXQi8QR4IVhG+FltEaECw+Ea68QgG31I5HqEBweTbrEcjNCAoGAgKEBqLCJGTJQUG2RHaEwgqDDIjNCcQlBjkRNBCkA+h1UOQB6Ftm+lERERERERERERERERERERUZ9M0jaFhGLqu7/vzvfm/3d5C4dPjC+fwra4LPzT/bPgVI4cejrvrz/dDfd3n068Glm6YPYo8+nEMx750aCmd+xmjnOMf+ts7uoMGikk9QHe57fn3f9qlUwwx9rfD6kado+BAgvuJoXE0HGwQFEDQicDpcPiFsR/V3h++b5G3im+Rb54s3QqZLP09bR7mafN+lTVtTlxALYz8khdQ25bS5++l9M9a2uJSmoiIiIiIiIiIiIiIiIiq7Q/X/CafvcC/HgAAAABJRU5ErkJggg==" alt="">
+								<div>无可用联系人</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-actions"><button class="cus-btn cus-btn-primary disabled">确定</button> <button class="cus-btn close-a">取消</button></div>
+				</div>
+				<!---->
+			</div>
+		</div>
+	</body>
+	<script src="js/logistics.js"></script>
+	<script src="js/logistics1.js"></script>
+
+</html>
